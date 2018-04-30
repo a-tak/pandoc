@@ -38,9 +38,9 @@ docker run -v ~/Desktop:/source pandoc -f opml -t markdown ブログネタ2.opml
 
 ### その他注意事項
 
-* Dockerfile内のPandocのバージョン指定は最新だと取得できない場合がある。Pandocのサイトを見て指定する。
+* Dockerfile内のPandocのバージョン指定はPandocのサイトを見て指定する。
     * https://pandoc.org/releases.html
-* 相手方のサーバーの問題が503エラーで中断する場合もある。もう一回実行するとうまく行く場合がある。
+* 相手方のサーバーの問題により503エラーで中断する場合もある。もう一回実行するとうまく行く場合がある。
 * returned a non-zero code: 137 となった場合はメモリ不足。Docker割り当てのメモリを増やして再実行する。
     * 2GBでエラーになって3GBだと成功した。
 
