@@ -32,7 +32,7 @@ A `/source` directory is created in the container, which can be mapped for use w
 * -o は出力ファイル名
 
 ```bash
-docker build . -t pandoc
+docker build . -t pandoc
 docker run -v ~/Desktop:/source pandoc -f opml -t markdown ブログネタ2.opml -o output.md
 ```
 
